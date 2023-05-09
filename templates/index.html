@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" , href="/static/style.css">
+    <title>ChatBot</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="mainTitle">
+        <!-- <h1>ChatBot</h1> -->
+    </div>
+    <div class="box"></div>
+    <div class="boxed">
+        <div>
+            <div id="chatbox">
+                <p class="botText">
+                    <span>Hi! Let's chat!</span>
+                </p>
+            </div>
+            <div id="userInput">
+                <input id="textInput" type="text" name="msg" placeholder="Enter your message here..." />
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js')}}"></script>
+
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+h1 {
+    color: black;
+    margin: 0;
+    padding: 10px;
+}
+
+#chatbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 50px;
+    background-color: #98AFC7;
+}
+
+#userInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 60px;
+}
+
+#textInput {
+    width: 100%;
+    border: none;
+    /* border-bottom: 3px solid black; */
+    /* font-size: 17px; */
+    margin-bottom: 50px;
+    border-radius: 5px;
+    line-height: 60px;
+    background-color: #4863A0;
+    font-size: 17px;
+    color: white;
+}
+.userText {
+    color: black;
+    font-size: 17px;
+    text-align: right;
+    line-height: 30px;
+}
+
+.userText span {
+    background-color: #4863A0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.botText {
+    color: black;
+    /* font-size: 17px; */
+    text-align: left;
+    line-height: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.botText span {
+    padding: 10px;
+}
+
+#tidbit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+.boxed {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 60px;
+    background-color: #98AFC7;
+}
+
+.box {
+    border: 2px solid black;
+}
