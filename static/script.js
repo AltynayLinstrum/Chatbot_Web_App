@@ -21,7 +21,8 @@
 // })
 
 const chatbot = document.getElementById("chatbot");
-const userInput = document.getElementById("user-input");
+const userInput = document.getElementById("userInput");
+let userText;
 const sendButton = document.getElementById("send-button");
 
 sendButton.addEventListener("click", sendUserMessage);
@@ -48,29 +49,23 @@ function sendUserMessage() {
 }
 
 function getChatbotResponse(userMessage) {
-  const messageBubble = createMessageBubble("...", false);
-  chatbot.appendChild(messageBubble);
+  const msgDiv = createMessageBubble("...", false);
+  chatbot.appendChild(msgDiv);
   scrollToBottom();
 
-  // Make a request to your chatbot's API here and replace the "..." message with the chatbot's response
-  // In this example, we're just going to use a hardcoded response
-
-  const chatbotResponse = "I'm sorry, I don't know how to respond to that.";
-
-  setTimeout(function() {
-    messageBubble.textContent = chatbotResponse;
+  $.get("/get", { msg: userMessage }).done(function (data) {
+    msgDiv.firstChild.textContent = data;
     scrollToBottom();
-  }, 1000);
+  });
+    
 }
 
 function createMessageBubble(message, isUserMessage) {
   const messageBubble = document.createElement("div");
   messageBubble.classList.add(isUserMessage ? "user-message" : "chatbot-message");
-
   const messageText = document.createElement("div");
   messageText.classList.add("message-bubble");
   messageText.textContent = message;
-
   messageBubble.appendChild(messageText);
 
   return messageBubble;

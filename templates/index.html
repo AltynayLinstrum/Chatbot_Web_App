@@ -5,25 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css" />
     <title>Chatbot</title>
 </head>
 
 <body>
+    <div class="header"></div>
     <div class="container">
-        <h1>Chatbot</h1>
+        <h1>Welcome!</h1>
         <div class="chatbot" id="chatbot">
             <div class="chatbot-message">
                 <div class="message-bubble">
-                    Hello! I'm a chatbot. How can I assist you today?
+                    Hello! How can I assist you today?
                 </div>
+            </div>
+            <div class="user-message">
+                <!-- <div class="message-bubble">Hi!</div> -->
             </div>
         </div>
         <div class="input-box">
-            <input type="text" id="user-input" placeholder="Type your message here" />
-            <button id="send-button" onclick="sendUserMessage()">Send</button>
+            <input type="text" id="userInput" placeholder="Type your message here" />
+            <div class="send-button" id="send-button" onclick="sendUserMessage()">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
