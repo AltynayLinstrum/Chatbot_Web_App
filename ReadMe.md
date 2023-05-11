@@ -7,6 +7,6 @@
   <li>HTML for creating the structure of the web pages</li>
   <li>CSS for styling the web pages</li>
   <li>JavaScript for creating dynamic elements and interactions</li>
- </ul><h3>Improvements for Future Iterations</h3>
+ </ul><h3>Future Improvements</h3>
 <p>There are several potential improvements that could be made to the Chatbot_Web_App in future iterations. For example, the chatbot could be trained on a larger dataset to improve the accuracy of its responses. Additionally, the user interface could be enhanced with additional features such as voice recognition and integration with other messaging platforms.</p>
 <b></b>
