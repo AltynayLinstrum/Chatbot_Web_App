@@ -1,5 +1,5 @@
 <h3>AI Chatbot Web App</h3>
-<p>I created this AI app with the help of Youtube tutorials, ChapGPT, online resources, and valuable insights of more experienced friends! It is a web application that allows users to communicate with a chatbot. The chatbot is designed to answer common questions related to the COVID-19 pandemic, such as symptoms, prevention measures, and vaccination information. Users can interact with the chatbot by typing messages in a chat interface.</p>
+<p>I created this AI app with the help of Youtube tutorials, ChapGPT, online resources, and valuable insights of more experienced friends! It is a web application that allows users to communicate with a chatbot. The chatbot is designed to answer common questions related to a wide array of topics ranging from history and literature to movies and politics. It can also tell a joke or two! Users can interact with the chatbot by typing messages in a chat interface.</p>
 <h3>Technologies/Libraries Used</h3>
 <ul>
   <li>Flask web framework</li>
